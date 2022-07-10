@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}<title>Local Library</title>{% endblock %}
+</head>
+<body>
+  {% block sidebar %}<!-- insert default navigation text for every page -->{% endblock %}
+  {% block content %}<h1>Local Library Home</h1>{% endblock %}
+  <a href="{% url 'polls:index' %}">polls/Index</a>
+</body>
+</html>
